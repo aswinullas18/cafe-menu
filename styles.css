@@ -102,8 +102,8 @@ body {
 
 /* About Section */
 .about-section {
-  
-    color: #36013f;
+    color: #FFF;
+    background-color: #36013f;
     padding: 20px;
     margin-top: 20px;
     text-align: center;
@@ -120,11 +120,13 @@ body {
 
 /* Contact Section */
 .contact-section {
-    color: #36013f;
+    background-color: #36013f;
+    color: #FFF;
     padding: 20px;
     margin-top: 20px;
     text-align: center;
 }
+
 
 .contact-section h2 {
     font-size: 2em;
