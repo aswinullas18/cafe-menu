@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Our Cafe</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-maroon custom-navbar">
+    <div class="container">
+      <a class="navbar-brand mx-auto" href="#"> 
+        <img src="Logo.png" alt="Cafe Logo" class="logo"> 
+      </a>
+    </div>
+  </nav>
+
+  <!-- Menu Section -->
+  <div class="container">
+    <div class="menu-card">
+      <h2 class="text-center">Cafe Menu</h2>
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <div id="menu-buttons">
+            <!-- Buttons that control the toggle visibility -->
+            <button class="btn btn-info btn-block" data-toggle="collapse" data-target="#hot-drinks" aria-expanded="false" aria-controls="hot-drinks">
+              Hot Drinks
+            </button>
+            <button class="btn btn-info btn-block" data-toggle="collapse" data-target="#cold-drinks" aria-expanded="false" aria-controls="cold-drinks">
+              Cold Drinks
+            </button>
+            <button class="btn btn-info btn-block" data-toggle="collapse" data-target="#frappuccino" aria-expanded="false" aria-controls="frappuccino">
+              Frappuccino
+            </button>
+            <button class="btn btn-info btn-block" data-toggle="collapse" data-target="#fries" aria-expanded="false" aria-controls="fries">
+              Fries
+            </button>
+            <button class="btn btn-info btn-block" data-toggle="collapse" data-target="#kerala-special-dinner-combo" aria-expanded="false" aria-controls="kerala-special-dinner-combo">
+              Kerala Special Dinner Combo
+            </button>
+          </div>
+        </div>
+        
+        <div class="col-md-8 col-sm-12">
+          <div id="menu-items">
+            <!-- Category collapse containers (Initially hidden) -->
+            <div id="hot-drinks" class="collapse category-items"></div>
+            <div id="cold-drinks" class="collapse category-items"></div>
+            <div id="frappuccino" class="collapse category-items"></div>
+            <div id="fries" class="collapse category-items"></div>
+            <div id="kerala-special-dinner-combo" class="collapse category-items"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4">
+    <div class="container">
+      <h2>Connect with Us</h2>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/911234567890" target="_blank">+91 1234 567 890</a></p>
+      <p><strong>Follow Us:</strong></p>
+      <a href="https://www.instagram.com/yourcafe" target="_blank">
+        <img src="images/instagram-logo.png" alt="Instagram" class="social-icon">
+      </a>
+      <a href="https://www.facebook.com/yourcafe" target="_blank">
+        <img src="images/facebook-logo.png" alt="Facebook" class="social-icon">
+      </a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
