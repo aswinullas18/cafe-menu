@@ -1,0 +1,173 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #36013f; /* Purple background */
+    color: white;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #36013f; /* Purple navbar background */
+    padding: 20px;
+}
+
+.navbar-brand .logo {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Navbar links */
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar-nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar-nav a {
+    color: #DDBC91; /* Golden color for text */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Hover effects for navbar links */
+.navbar-nav a:hover {
+    color: #36013f;
+}
+
+/* Menu Title */
+.menu-title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menu-title h1 {
+    font-size: 2em;
+    color: #DDBC91;
+}
+
+/* Container for buttons and items */
+.button-container {
+    margin: 10px 0;
+}
+
+.toggle-button {
+    width: 100%;  /* Ensures button is 100% width */
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: transparent;
+    color: #DDBC91;
+    border: 2px solid #DDBC91;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-button:hover {
+    background-color: #DDBC91;
+    color: #36013f;
+}
+
+/* Container for menu items */
+.items-container {
+    display: none; /* Hide items initially */
+    margin-top: 10px;
+    color: #DDBC91;
+    text-align: center;
+}
+
+/* Item styles */
+.item {
+    font-size: 1.1em;
+    margin: 5px 0;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.item:hover {
+    background-color: #DDBC91;
+    color: #36013f;
+}
+
+/* About Section */
+.about-section {
+  
+    color: #36013f;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2em;
+}
+
+.about-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact-section {
+    color: #36013f;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2em;
+}
+
+.contact-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.social-icons a {
+    color: #DDBC91;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #FFF;
+}
+
+/* Footer styles */
+footer {
+    background-color: #36013f;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .menu-title h1 {
+        font-size: 1.5em;
+    }
+
+    .toggle-button {
+        font-size: 1em;
+    }
+
+    .about-section, .contact-section {
+        padding: 15px;
+    }
+}
