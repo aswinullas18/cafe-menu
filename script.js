@@ -1,3 +1,4 @@
+// Function to add a menu item to a specific category
 function addMenuItem(name, price, description, category) {
     const categoryContainer = document.getElementById(category);
     const menuItem = document.createElement('div');
@@ -10,6 +11,7 @@ function addMenuItem(name, price, description, category) {
     categoryContainer.appendChild(menuItem);
   }
   
+  // Function to show a specific category and hide the others
   function showCategory(categoryId) {
     const categories = document.getElementsByClassName('category-items');
     for (let i = 0; i < categories.length; i++) {
@@ -58,4 +60,9 @@ function addMenuItem(name, price, description, category) {
   addMenuItem('PUTTU + CHICKEN CURRY/STEW', '99', '', 'kerala-special-dinner-combo');
   addMenuItem('CHAPPATHI + CHICKEN CURRY/STEW', '99', '', 'kerala-special-dinner-combo');
   addMenuItem('BREAD + CHICKEN CURRY/STEW', '99', '', 'kerala-special-dinner-combo');
+  
+  // Show the first category by default
+  document.addEventListener('DOMContentLoaded', function () {
+    showCategory('hot-drinks');
+  });
   
