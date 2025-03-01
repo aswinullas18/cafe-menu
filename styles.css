@@ -19,9 +19,8 @@ body {
 
 .navbar-brand .logo {
     width: 100%;
-    max-width: 250px; /* Increase logo size */
+    max-width: 350px; /* Increase logo size */
     height: auto;
-    
 }
 
 /* Menu card styles with golden brown accents */
@@ -42,11 +41,6 @@ body {
     padding: 15px;
     border-radius: 10px;
     background-color: #D8B84E; /* Light gold background */
-    transition: background-color 0.3s ease;
-}
-
-.category:hover {
-    background-color: #C7A140; /* Slightly darker shade of gold on hover */
 }
 
 /* Category titles - bold, caps, and golden brown */
@@ -58,7 +52,7 @@ body {
     margin-bottom: 15px;
 }
 
-/* Menu item styling with camel font */
+/* Menu item styling with camel case font */
 .menu-item {
     display: flex;
     justify-content: space-between;
@@ -67,24 +61,21 @@ body {
     padding: 5px 0;
     background-color: rgba(58, 27, 47, 0.6); /* Light transparent deep maroon for items background */
     border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
-.menu-item:hover {
-    background-color: rgba(58, 27, 47, 0.8); /* Slightly darker maroon background on hover */
-}
-
+/* Menu item names and prices styling */
 .item-name {
     font-weight: bold;
     color: #D88A3A; /* Golden brown for item names */
     font-family: 'Cursive', sans-serif; /* Camel-like font for item names */
-    font-size: 1.2em; /* Slightly smaller font size than category */
+    font-size: 0.9em; /* Reduced font size */
+    text-transform: capitalize; /* Camel case styling (capitalize first letter of each word) */
 }
 
 .item-price {
     color: #D88A3A; /* Golden brown for prices */
     font-family: 'Cursive', sans-serif; /* Camel-like font for item prices */
-    font-size: 1.1em; /* Keep the price a bit larger than item names */
+    font-size: 0.9em; /* Reduced font size */
 }
 
 /* Footer with deep maroon background */
