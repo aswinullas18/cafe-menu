@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Menu</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="menu-card">
+      <h2 class="text-center">Cafe Menu</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div id="menu-buttons">
+            <button class="btn btn-info btn-block" onclick="showCategory('hot-drinks')">Hot Drinks</button>
+            <button class="btn btn-info btn-block" onclick="showCategory('cold-drinks')">Cold Drinks</button>
+            <button class="btn btn-info btn-block" onclick="showCategory('frappuccino')">Frappuccino</button>
+            <button class="btn btn-info btn-block" onclick="showCategory('fries')">Fries</button>
+            <button class="btn btn-info btn-block" onclick="showCategory('premium-shakes')">Premium Shakes</button>
+            <button class="btn btn-info btn-block" onclick="showCategory('snacks')">Snacks</button>
+            <button class="btn btn-info btn-block" onclick="showCategory('mojito')">Mojito</button>
+            <button class="btn btn-info btn-block" onclick="showCategory('kerala-special-dinner-combo')">Kerala Special Dinner Combo</button>
+            <button class="btn btn-info btn-block" onclick="showCategory('other-food-items')">Other Food Items</button>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div id="menu-items">
+            <div id="hot-drinks" class="category-items"></div>
+            <div id="cold-drinks" class="category-items"></div>
+            <div id="frappuccino" class="category-items"></div>
+            <div id="fries" class="category-items"></div>
+            <div id="premium-shakes" class="category-items"></div>
+            <div id="snacks" class="category-items"></div>
+            <div id="mojito" class="category-items"></div>
+            <div id="kerala-special-dinner-combo" class="category-items"></div>
+            <div id="other-food-items" class="category-items"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
