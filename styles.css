@@ -1,85 +1,91 @@
+/* Body and general styles */
 body {
     background-color: #f8f9fa;
     font-family: 'Arial', sans-serif;
-}
-
-.navbar-brand .logo {
-    width: 100%;  /* Make logo responsive */
-    max-width: 250px;  /* Set a maximum width */
+  }
+  
+  /* Navbar styles */
+  .navbar-brand .logo {
+    width: 100%;
+    max-width: 250px;
     height: auto;
     margin-right: 10px;
-}
-
-.bg-maroon {
-    background-color: #800000; /* Maroon background color */
-}
-
-.custom-navbar {
-    padding: 0;  /* Remove default padding */
-    height: auto;  /* Make height flexible */
+  }
+  
+  .bg-maroon {
+    background-color: #800000;
+  }
+  
+  .custom-navbar {
+    padding: 0;
+    height: auto;
     display: flex;
     align-items: center;
-}
-
-.header {
-    font-family: 'Pacifico', cursive;
-}
-
-.header h1 {
+  }
+  
+  /* Menu item styles */
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .menu-item:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05);
+  }
+  
+  .menu-item .item-name {
+    font-weight: bold;
     color: #333;
-}
-
-.social-icon {
-    width: 50px;
-    height: auto;
-    margin: 0 10px;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    margin: 0; /* Remove margin to eliminate gaps */
-    padding: 10px; /* Add padding for better touch targets */
-}
-
-.btn-primary:hover {
+  }
+  
+  .menu-item .item-price {
+    color: #d9534f;
+    font-weight: bold;
+    text-align: right;
+    min-width: 60px;
+  }
+  
+  /* Button styles for categories */
+  .btn-info {
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  .btn-info:hover {
     background-color: #0056b3;
     border-color: #0056b3;
-}
-
-.text-center .btn-lg {
-    display: block;
-    margin: 0 auto; /* Centering does not affect spacing */
-}
-
-footer {
-    background-color: #f8f9fa;
-    padding: 10px 0;  /* Adjust padding for smaller screens */
-}
-
-footer h2 {
-    font-family: 'Pacifico', cursive;
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-/* Add media queries for responsiveness */
-@media (max-width: 768px) {
+  }
+  
+  /* List styles */
+  .items-list {
+    margin-top: 15px;
+  }
+  
+  .items-list .menu-item {
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
     .menu-card {
-        padding: 10px; /* Adjust padding for smaller screens */
+      padding: 10px;
     }
-
+  
     .navbar-brand .logo {
-        max-width: 200px; /* Adjust logo size for smaller screens */
+      max-width: 200px;
     }
-
-    .btn-info {
-        font-size: 14px; /* Adjust button font size */
-    }
-
+  
     footer h2 {
-        font-size: 18px; /* Adjust footer heading size */
+      font-size: 18px;
     }
-}
+  }
+  
