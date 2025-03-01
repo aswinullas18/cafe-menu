@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Our Cafe</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-maroon custom-navbar">
+    <div class="container">
+      <a class="navbar-brand mx-auto" href="#"> 
+        <img src="Logo.png" alt="Cafe Logo" class="logo"> 
+      </a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="menu-card">
+      <h2 class="text-center">Cafe Menu</h2>
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <div id="menu-buttons">
+            <button class="btn btn-info btn-block" onclick="showCategory('hot-drinks')">Hot Drinks</button>
+            <button class="btn btn-info btn-block" onclick="showCategory('cold-drinks')">Cold Drinks</button>
+            <button class="btn btn-info btn-block" onclick="showCategory('frappuccino')">Frappuccino</button>
+            <button class="btn btn-info btn-block" onclick="showCategory('fries')">Fries</button>
+            <button class="btn btn-info btn-block" onclick="showCategory('premium-shakes')">Premium Shakes</button>
+            <button class="btn btn-info btn-block" onclick="showCategory('snacks')">Snacks</button>
+            <button class="btn btn-info btn-block" onclick="showCategory('mojito')">Mojito</button>
+            <button class="btn btn-info btn-block" onclick="showCategory('kerala-special-dinner-combo')">Kerala Special Dinner Combo</button>
+            <button class="btn btn-info btn-block" onclick="showCategory('other-food-items')">Other Food Items</button>
+          </div>
+        </div>
+        <div class="col-md-8 col-sm-12">
+          <div id="menu-items">
+            <!-- Categories for displaying items below -->
+            <div id="hot-drinks" class="category-items">
+              <h3>Hot Drinks</h3>
+              <div class="items-list"></div>
+            </div>
+            <div id="cold-drinks" class="category-items">
+              <h3>Cold Drinks</h3>
+              <div class="items-list"></div>
+            </div>
+            <div id="frappuccino" class="category-items">
+              <h3>Frappuccino</h3>
+              <div class="items-list"></div>
+            </div>
+            <div id="fries" class="category-items">
+              <h3>Fries</h3>
+              <div class="items-list"></div>
+            </div>
+            <div id="premium-shakes" class="category-items">
+              <h3>Premium Shakes</h3>
+              <div class="items-list"></div>
+            </div>
+            <div id="snacks" class="category-items">
+              <h3>Snacks</h3>
+              <div class="items-list"></div>
+            </div>
+            <div id="mojito" class="category-items">
+              <h3>Mojito</h3>
+              <div class="items-list"></div>
+            </div>
+            <div id="kerala-special-dinner-combo" class="category-items">
+              <h3>Kerala Special Dinner Combo</h3>
+              <div class="items-list"></div>
+            </div>
+            <div id="other-food-items" class="category-items">
+              <h3>Other Food Items</h3>
+              <div class="items-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4">
+    <div class="container">
+      <h2>Connect with Us</h2>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/911234567890" target="_blank">+91 1234 567 890</a></p>
+      <p><strong>Follow Us:</strong></p>
+      <a href="https://www.instagram.com/yourcafe" target="_blank">
+        <img src="images/instagram-logo.png" alt="Instagram" class="social-icon">
+      </a>
+      <a href="https://www.facebook.com/yourcafe" target="_blank">
+        <img src="images/facebook-logo.png" alt="Facebook" class="social-icon">
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
