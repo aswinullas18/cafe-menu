@@ -1,46 +1,85 @@
 body {
     background-color: #f8f9fa;
     font-family: 'Arial', sans-serif;
-  }
-  .menu-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    padding: 20px;
-  }
-  .menu-item {
-    border-bottom: 1px solid #e9ecef;
-    padding: 10px 0;
-  }
-  .menu-item:last-child {
-    border-bottom: none;
-  }
-  .item-name {
-    font-weight: bold;
-    font-size: 1.2em;
-  }
-  .item-price {
-    float: right;
-    color: #6c757d;
-  }
-  .item-description {
-    color: #6c757d;
-  }
-  .category-items {
-    display: none;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+.navbar-brand .logo {
+    width: 100%;  /* Make logo responsive */
+    max-width: 250px;  /* Set a maximum width */
+    height: auto;
+    margin-right: 10px;
+}
+
+.bg-maroon {
+    background-color: #800000; /* Maroon background color */
+}
+
+.custom-navbar {
+    padding: 0;  /* Remove default padding */
+    height: auto;  /* Make height flexible */
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    font-family: 'Pacifico', cursive;
+}
+
+.header h1 {
+    color: #333;
+}
+
+.social-icon {
+    width: 50px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    margin: 0; /* Remove margin to eliminate gaps */
+    padding: 10px; /* Add padding for better touch targets */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.text-center .btn-lg {
+    display: block;
+    margin: 0 auto; /* Centering does not affect spacing */
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 10px 0;  /* Adjust padding for smaller screens */
+}
+
+footer h2 {
+    font-family: 'Pacifico', cursive;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
     .menu-card {
-      margin: 10px;
-      padding: 15px;
+        padding: 10px; /* Adjust padding for smaller screens */
     }
-    .item-name {
-      font-size: 1em;
+
+    .navbar-brand .logo {
+        max-width: 200px; /* Adjust logo size for smaller screens */
     }
-    .item-price {
-      font-size: 0.9em;
+
+    .btn-info {
+        font-size: 14px; /* Adjust button font size */
     }
-  }
-  
+
+    footer h2 {
+        font-size: 18px; /* Adjust footer heading size */
+    }
+}
