@@ -5,13 +5,10 @@ body {
     padding: 0;
     background-color: #36013f; /* Purple background */
     color: white;
-    padding-top: 60px;
 }
 
 /* Navbar styles */
 .navbar {
-    position: fixed;
-    top: 0;
     width: 100%;
     background: white;
     z-index: 1000;
