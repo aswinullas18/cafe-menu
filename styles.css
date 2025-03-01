@@ -1,0 +1,140 @@
+/* Set the overall background with golden brown and deep maroon color */
+body {
+    background-color: #3a1b2f; /* Deep maroon background */
+    font-family: 'Arial', sans-serif;
+    color: #D88A3A; /* Golden brown text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar customization with deep maroon background */
+.navbar {
+    background-color: #3a1b2f; /* Deep maroon navbar background */
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Align the logo vertically */
+    height: 100px; /* Increase navbar height */
+    padding: 0 20px; /* Add some padding for better spacing */
+}
+
+.navbar-brand .logo {
+    width: 100%;
+    max-width: 250px; /* Increase logo size */
+    height: auto;
+    
+}
+
+/* Menu card styles with golden brown accents */
+.menu-card {
+    background-color: #3a1b2f; /* Deep maroon card background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #D88A3A; /* Golden brown text for menu */
+}
+
+/* Category styles with light gold background */
+.category {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #D8B84E; /* Light gold background */
+    transition: background-color 0.3s ease;
+}
+
+.category:hover {
+    background-color: #C7A140; /* Slightly darker shade of gold on hover */
+}
+
+/* Category titles - bold, caps, and golden brown */
+.category h3 {
+    color: #3a1b2f; /* Darker maroon color for category titles */
+    font-weight: bold; /* Bold category titles */
+    text-transform: uppercase; /* Make text uppercase */
+    font-size: 1.5em; /* Slightly larger font size for categories */
+    margin-bottom: 15px;
+}
+
+/* Menu item styling with camel font */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    background-color: rgba(58, 27, 47, 0.6); /* Light transparent deep maroon for items background */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: rgba(58, 27, 47, 0.8); /* Slightly darker maroon background on hover */
+}
+
+.item-name {
+    font-weight: bold;
+    color: #D88A3A; /* Golden brown for item names */
+    font-family: 'Cursive', sans-serif; /* Camel-like font for item names */
+    font-size: 1.2em; /* Slightly smaller font size than category */
+}
+
+.item-price {
+    color: #D88A3A; /* Golden brown for prices */
+    font-family: 'Cursive', sans-serif; /* Camel-like font for item prices */
+    font-size: 1.1em; /* Keep the price a bit larger than item names */
+}
+
+/* Footer with deep maroon background */
+footer {
+    background-color: #2d0e20; /* A different shade of deep maroon for footer */
+    padding: 30px 0; /* Increase padding for a larger footer */
+    color: #D88A3A; /* Golden brown text in footer */
+    text-align: center;
+    border-top: 4px solid #D88A3A; /* Add a golden brown border at the top of the footer */
+}
+
+/* Footer heading styling */
+footer h2 {
+    font-family: 'Pacifico', cursive;
+    color: #D88A3A; /* Golden brown for footer title */
+    font-size: 2em; /* Larger size for footer title */
+    margin-bottom: 20px;
+}
+
+/* Footer text styling */
+footer p {
+    margin: 10px 0;
+    font-size: 1.1em; /* Slightly larger text in footer */
+}
+
+/* Social icons in footer */
+footer a img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+/* Responsive media query for mobile devices */
+@media (max-width: 768px) {
+    .menu-card {
+        padding: 15px;
+    }
+
+    .category h3 {
+        font-size: 18px;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .item-name,
+    .item-price {
+        margin-bottom: 10px;
+    }
+}
