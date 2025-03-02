@@ -35,6 +35,7 @@ body {
 .navbar-nav li {
     display: inline-block;
     margin-right: 20px;
+    margin-left: 25px;
 }
 
 .navbar-nav a {
