@@ -2,27 +2,25 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    padding: 0;
     background-color: #36013f; /* Purple background */
     color: white;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Navbar styles */
 .navbar {
     width: 100%;
-    background: white;
-    z-index: 1000;
     background-color: #36013f; /* Purple navbar background */
     padding: 20px;
-    display: flex;
-    justify-content: center; /* Centering the navbar content */
-    align-items: center;
+    box-sizing: border-box;
 }
 
 .navbar-brand .logo {
     max-width: 250px;
     height: auto;
     display: block;
-    margin-left: -30px;
+    margin: 0 auto;
 }
 
 /* Navbar links */
@@ -30,12 +28,11 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center; /* Centering the navbar links */
-    flex-grow: 1;
+    text-align: center;
 }
 
 .navbar-nav li {
+    display: inline-block;
     margin-right: 20px;
 }
 
@@ -63,11 +60,12 @@ body {
 
 /* Container for buttons and items */
 .button-container {
+    width: 100%;  /* Full width of the parent */
     margin: 10px 0;
-    text-align: center; /* Centering the buttons */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    text-align: center; /* Center buttons */
 }
 
-/* Button styles */
 .toggle-button {
     width: 100%;  /* Ensures button is 100% width */
     padding: 15px;
@@ -79,8 +77,7 @@ body {
     cursor: pointer;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
-    display: inline-block; /* Aligns the button to center */
-    margin: 0 auto; /* Centers the button */
+    display: inline-block; /* Ensure the button is aligned properly */
 }
 
 .toggle-button:hover {
@@ -181,4 +178,9 @@ footer p {
     .about-section, .contact-section {
         padding: 15px;
     }
+
+    .button-container {
+        padding: 0 10px; /* Ensure buttons don't overflow */
+    }
 }
+
