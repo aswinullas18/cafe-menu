@@ -2,7 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
+    margin-left: 10px;
     background-color: #36013f; /* Purple background */
     color: white;
 }
