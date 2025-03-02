@@ -14,13 +14,16 @@ body {
     z-index: 1000;
     background-color: #36013f; /* Purple navbar background */
     padding: 20px;
+    display: flex;
+    justify-content: center; /* Centering the navbar content */
+    align-items: center;
 }
 
 .navbar-brand .logo {
     max-width: 250px;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin-left: -30px;
 }
 
 /* Navbar links */
@@ -28,11 +31,12 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center; /* Centering the navbar links */
+    flex-grow: 1;
 }
 
 .navbar-nav li {
-    display: inline-block;
     margin-right: 20px;
 }
 
@@ -61,8 +65,10 @@ body {
 /* Container for buttons and items */
 .button-container {
     margin: 10px 0;
+    text-align: center; /* Centering the buttons */
 }
 
+/* Button styles */
 .toggle-button {
     width: 100%;  /* Ensures button is 100% width */
     padding: 15px;
@@ -74,6 +80,8 @@ body {
     cursor: pointer;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
+    display: inline-block; /* Aligns the button to center */
+    margin: 0 auto; /* Centers the button */
 }
 
 .toggle-button:hover {
@@ -129,7 +137,6 @@ body {
     margin-top: 20px;
     text-align: center;
 }
-
 
 .contact-section h2 {
     font-size: 2em;
