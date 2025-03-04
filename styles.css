@@ -17,12 +17,13 @@ body {
     padding: 15px;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
 .navbar-brand .logo {
-    max-width: 150px;
+    max-width: 250px; /* Increased logo size */
+    margin-bottom: 10px;
 }
 
 .navbar-nav {
@@ -30,17 +31,18 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: center;
 }
 
 .navbar-nav li {
-    margin-left: 15px;
+    margin: 0 15px;
 }
 
 .navbar-nav a {
     color: #DDBC91;
     text-decoration: none;
     font-size: 1.1em;
-    padding: 10px; /* Increase touch target */
+    padding: 10px;
 }
 
 .navbar-nav a:hover {
