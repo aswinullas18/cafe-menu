@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASA CAFE</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="Logo.png" alt="Logo" class="logo">
+        </div>
+        <ul class="navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="menu-title">
+        <h1>Menu</h1>
+    </div>
+
+    <div class="menu-categories">
+        <div class="category">
+            <button class="toggle-button" data-category="hot-drinks-items">HOT DRINKS</button>
+            <div id="hot-drinks-items" class="items-container">
+                <div class="item">Nescafe Latte</div>
+                <div class="item">Premium Badam Milk</div>
+                <div class="item">Cappuccino</div>
+                <div class="item">Cappuccino (Hazelnut/French Vanilla)</div>
+                <div class="item">Hot Chocolate</div>
+                <div class="item">Hot Chocolate (Hazelnut/French Vanilla)</div>
+                <div class="item">Mocha</div>
+            </div>
+        </div>
+        <div class="category">
+            <button class="toggle-button" data-category="cold-drinks-items">COLD DRINKS</button>
+            <div id="cold-drinks-items" class="items-container">
+                <div class="item">Premium Cold Coffee</div>
+                <div class="item">Cold Coffee (Hazelnut/French Vanilla)</div>
+            </div>
+        </div>
+        <div class="category">
+            <button class="toggle-button" data-category="frappuccino-items">FRAPPUCCINO</button>
+            <div id="frappuccino-items" class="items-container">
+                <div class="item">Chocolate Oreo Frappe</div>
+                <div class="item">American Mud Pie</div>
+                <div class="item">Mocha Frappe</div>
+                <div class="item">Lotus Biscoff Frappe</div>
+            </div>
+        </div>
+        <div class="category">
+            <button class="toggle-button" data-category="premium-shakes-items">PREMIUM SHAKES</button>
+            <div id="premium-shakes-items" class="items-container">
+                <div class="item">Chocolate Shake</div>
+                <div class="item">Strawberry Shake</div>
+                <div class="item">Kitkat Shake</div>
+                <div class="item">Apple Shake</div>
+                <div class="item">Banana Shake</div>
+                <div class="item">Blueberry Shake</div>
+                <div class="item">Dry Fruits Shake</div>
+            </div>
+        </div>
+        <div class="category">
+            <button class="toggle-button" data-category="mojito-items">MOJITO</button>
+            <div id="mojito-items" class="items-container">
+                <div class="item">Orange</div>
+                <div class="item">Blueberry</div>
+                <div class="item">Strawberry</div>
+                <div class="item">Green Apple</div>
+            </div>
+        </div>
+        <div class="category">
+            <button class="toggle-button" data-category="kerala-special-items">KERALA SPECIAL</button>
+            <div id="kerala-special-items" class="items-container">
+                <div class="item">Sarbath</div>
+                <div class="item">Soda Sarbath</div>
+                <div class="item">Lime Sarbath</div>
+                <div class="item">Milk Sarbath</div>
+                <div class="item">Normal Avil Milk</div>
+                <div class="item">Special Avil Milk</div>
+                <div class="item">Royal Avil Milk</div>
+            </div>
+        </div>
+        <div class="category">
+            <button class="toggle-button" data-category="pastries-items">PASTRIES</button>
+            <div id="pastries-items" class="items-container">
+                <div class="item">Chocolate Cheese Cake</div>
+                <div class="item">Blueberry Cheese Cake</div>
+                <div class="item">Strawberry Cheese Cake</div>
+            </div>
+        </div>
+        <div class="category">
+            <button class="toggle-button" data-category="fries-items">FRIES</button>
+            <div id="fries-items" class="items-container">
+                <div class="item">French Fries</div>
+                <div class="item">Peri Peri Fries</div>
+                <div class="item">Veg Nuggets</div>
+                <div class="item">Chicken Nuggets</div>
+                <div class="item">Chilly Cheesy Nuggets</div>
+                <div class="item">Chilli Garlic Potato Pops</div>
+            </div>
+        </div>
+        <div class="category">
+            <button class="toggle-button" data-category="snacks-items">SNACKS</button>
+            <div id="snacks-items" class="items-container">
+                <div class="item">Vada</div>
+                <div class="item">Pazhampori</div>
+                <div class="item">Pazham Nirachath (Stuffed Banana)</div>
+                <div class="item">Masala / Aalu Bonda</div>
+                <div class="item">Bajji</div>
+                <div class="item">Egg Bajji</div>
+                <div class="item">Veg Samosa</div>
+                <div class="item">Chicken Samosa</div>
+                <div class="item">Kerala Special Unnakkaya</div>
+                <div class="item">Speciall Chattipathiri Chicken</div>
+            </div>
+        </div>
+        <div class="category">
+            <button class="toggle-button" data-category="other-food-items">OTHER FOOD ITEMS</button>
+            <div id="other-food-items" class="items-container">
+                <div class="item">Veg Maggie</div>
+                <div class="item">Egg Maggie</div>
+                <div class="item">Corn Maggie</div>
+                <div class="item">Chicken Maggie</div>
+                <div class="item">Bread Omelette</div>
+                <div class="item">Bread Pocket (Egg)</div>
+                <div class="item">Bread Pocket (Chicken)</div>
+                <div class="item">White Sauce Pasta</div>
+                <div class="item">Alfredo Pasta</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-section" class="about-section">
+        <h2>About Us</h2>
+        <p>Welcome to <strong>Casa Cafe</strong>. We offer a variety of drinks and food items for you to enjoy. Our cafe is located at:</p>
+        <p><a href="https://www.google.com/maps?q=Casa+Cafe,+Phase+2,+Electronic+City,+Bengaluru,+Karnataka+560100" target="_blank"><strong>Shanthipura Main Road, Bengaluru, Karnataka 560100</strong></a></p>
+    </div>
+
+    <div id="contact-section" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Follow us on WhatsApp / Instagram:</p>
+        <div class="social-icons">
+            <a href="https://wa.me/918129553200" target="_blank">WhatsApp</a>
+            <a href="https://instagram.com/_casa_cafe" target="_blank">Instagram</a>
+        </div>
+        <p>Contact us at: <strong>+91 8129553200</strong></p>
+        <p>Email us at: <strong>casacafe0003@gmail.com</strong></p>
+    </div>
+
+    <footer>
+        <p>© 2025 Casa Cafe. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://wa.me/918129553200" target="_blank">WhatsApp</a>
+            <a href="https://instagram.com/_casa_cafe" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

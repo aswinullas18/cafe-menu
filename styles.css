@@ -1,0 +1,153 @@
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #36013f;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: #36013f;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand .logo {
+    max-width: 150px;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-nav li {
+    margin-left: 15px;
+}
+
+.navbar-nav a {
+    color: #DDBC91;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px; /* Increase touch target */
+}
+
+.navbar-nav a:hover {
+    color: white;
+}
+
+/* Menu Title */
+.menu-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu-title h1 {
+    font-size: 1.8em;
+    color: #DDBC91;
+}
+
+/* Menu Categories */
+.menu-categories {
+    padding: 10px;
+}
+
+.category {
+    margin-bottom: 15px;
+}
+
+.toggle-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    background-color: transparent;
+    color: #DDBC91;
+    border: 2px solid #DDBC91;
+    cursor: pointer;
+    text-align: center; /* Center text within toggle button */
+    box-sizing: border-box;
+}
+
+.toggle-button:hover {
+    background-color: #DDBC91;
+    color: #36013f;
+}
+
+.items-container {
+    display: none;
+    background-color: #4a154f;
+    padding: 10px;
+    border: 1px solid #DDBC91;
+    box-sizing: border-box;
+}
+
+.item {
+    padding: 10px; /* Increase touch target */
+    border-bottom: 1px solid #DDBC91;
+    text-align: left;
+    font-size: 1em;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+/* About Section */
+.about-section, .contact-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-section h2, .contact-section h2 {
+    color: #DDBC91;
+    margin-bottom: 10px;
+}
+
+.about-section p, .contact-section p {
+    line-height: 1.6;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #DDBC91;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #36013f;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav li {
+        margin: 5px 0;
+    }
+}
