@@ -301,3 +301,7 @@ footer p {
 #place-order-btn:hover {
     background-color: #563d7c; /* Darker shade on hover */
 }
+
+#about-section {
+    margin-top:5em;
+}
