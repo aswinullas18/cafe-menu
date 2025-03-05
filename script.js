@@ -76,13 +76,13 @@ function updateCartUI() {
             const decreaseBtn = document.createElement('button');
             decreaseBtn.innerHTML = '<i class="fas fa-minus-circle" style="font-size: 12px; "></i>'; // Smallest icon
             decreaseBtn.classList.add('btn');
-            decreaseBtn.style.margin = '0 5px';
+            decreaseBtn.style.margin = '0 0px';
             buttonContainer.appendChild(decreaseBtn);
 
             const increaseBtn = document.createElement('button');
             increaseBtn.innerHTML = '<i class="fas fa-plus-circle" style="font-size: 12px;"></i>'; // Smallest icon
             increaseBtn.classList.add('btn');
-            increaseBtn.style.margin = '0 5px';
+            increaseBtn.style.margin = '0 0px';
             buttonContainer.appendChild(increaseBtn);
 
             li.appendChild(buttonContainer);
